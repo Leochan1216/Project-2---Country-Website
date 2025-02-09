@@ -43,7 +43,6 @@ body {
     min-height: 100vh;
 }
 
-/* Adding Blur Effect */
 body::before {
     content: "";
     position: absolute;
@@ -86,7 +85,7 @@ button:focus, a:focus {
 
 /* Header */
 #main-header {
-    background: #a80000;
+    background: #aaa;
     color: white;
     width: 100%;
     display: flex;
@@ -115,7 +114,7 @@ button:focus, a:focus {
 
 /* Navigation */
 #main-nav {
-    background: #d90429;
+    background: #000;
     display: flex;
     justify-content: center;
     padding: 15px;
@@ -140,7 +139,7 @@ button:focus, a:focus {
 .menu-button {
     display: none;
     background: white;
-    color: #a80000;
+    color: #aaa;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
@@ -154,7 +153,7 @@ button:focus, a:focus {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background: #d90429;
+    background: #333;
     position: absolute;
     top: 70px;
     left: 0;
@@ -202,13 +201,13 @@ button:focus, a:focus {
 }
 
 .credits-table th, .credits-table td {
-    border: 1px solid #8b0000;
+    border: 1px solid #333;
     padding: 12px;
     text-align: left;
 }
 
 .credits-table th {
-    background: #8b0000;
+    background: #333;
     color: white;
     font-weight: bold;
 }
@@ -280,13 +279,13 @@ label {
 input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #aaa;
     border-radius: 5px;
     font-size: 16px;
 }
 
 .submit-button {
-    background: #c70039;
+    background: #333;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -294,22 +293,24 @@ input {
     font-size: 18px;
     border-radius: 5px;
     margin-top: 10px;
-    transition: background 0.3s;
 }
 
 .submit-button:hover {
-    background: #8b0000;
+    background: #333;
 }
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #main-footer {
-    background: #8b0000;
+    background: #333;
     color: white;
     text-align: center;
     padding: 15px;
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 /*--------------------------------------------------------------

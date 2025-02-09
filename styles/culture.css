@@ -36,14 +36,13 @@
 body {
     background: url('/images/hongkong-background.jpg') no-repeat center center/cover;
     position: relative;
-    color: #333;
+    color: #000;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Adding Blur Effect */
 body::before {
     content: "";
     position: absolute;
@@ -85,7 +84,7 @@ button:focus, a:focus {
 
 /* Header */
 #main-header {
-    background: #a80000;
+    background: #aaa;
     color: white;
     width: 100%;
     display: flex;
@@ -114,7 +113,7 @@ button:focus, a:focus {
 
 /* Navigation */
 #main-nav {
-    background: #d90429;
+    background: #000;
     display: flex;
     justify-content: center;
     padding: 15px;
@@ -139,7 +138,7 @@ button:focus, a:focus {
 .menu-button {
     display: none;
     background: white;
-    color: #a80000;
+    color: #aaa;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
@@ -153,7 +152,7 @@ button:focus, a:focus {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background: #d90429;
+    background: #000;
     position: absolute;
     top: 70px;
     left: 0;
@@ -245,7 +244,7 @@ button:focus, a:focus {
 
 /* Individual Culture Cards */
 .culture-card {
-    background: #c70039;
+    background: #333;
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -275,11 +274,14 @@ button:focus, a:focus {
 # Footer
 --------------------------------------------------------------*/
 #main-footer {
-    background: #8b0000;
+    background: #333;
     color: white;
     text-align: center;
     padding: 15px;
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 /*--------------------------------------------------------------
