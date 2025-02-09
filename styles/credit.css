@@ -216,7 +216,7 @@ button:focus, a:focus {
     background: #f0f0f0;
 }
 
-.credits-table tbody tr:hover {
+.credits-table tbody td:hover {
     background: rgba(139, 0, 0, 0.2);
 }
 
