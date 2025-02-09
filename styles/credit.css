@@ -1,0 +1,290 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+    - Normalize
+    - Box sizing
+    - Media width
+# Base
+    - Typography
+    - Elements
+    - Links
+# Layout
+# Components
+    - Header
+    - Navigation
+    - Main (History Page)
+    - Footer
+# Media Queries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Elements */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+
+/* Header */
+#main-header {
+    background: #a80000;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header-logo {
+    height: 40px;
+    width: auto;
+}
+
+.header-title {
+    font-size: 24px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Navigation */
+#main-nav {
+    background: #d90429;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: bold;
+}
+
+/* Mobile Menu */
+.menu-button {
+    display: none;
+    background: white;
+    color: #a80000;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#mobile-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: #d90429;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 10;
+    padding: 10px 0;
+}
+
+#mobile-nav.active {
+    display: flex;
+}
+
+#mobile-nav ul {
+    list-style: none;
+    width: 100%;
+}
+
+#mobile-nav li {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid white;
+}
+
+#mobile-nav a {
+    color: white;
+}
+
+/*--------------------------------------------------------------
+# Credits Table
+--------------------------------------------------------------*/
+.credits-section {
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+    margin: 40px auto;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.credits-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.credits-table th, .credits-table td {
+    border: 1px solid #8b0000;
+    padding: 12px;
+    text-align: left;
+}
+
+.credits-table th {
+    background: #8b0000;
+    color: white;
+    font-weight: bold;
+}
+
+.credits-table tbody tr:nth-child(even) {
+    background: #f0f0f0;
+}
+
+.credits-table tbody tr:hover {
+    background: rgba(139, 0, 0, 0.2);
+}
+
+/*--------------------------------------------------------------
+# Responsive Design
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+    .credits-table th, .credits-table td {
+        padding: 8px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Contact Form
+--------------------------------------------------------------*/
+.contact-section {
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+    margin: 40px auto;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 15px;
+}
+
+/* Form Fields */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-button {
+    background: #c70039;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.submit-button:hover {
+    background: #8b0000;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+    background: #8b0000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Responsive Design
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+    .credits-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .credit-box {
+        width: 90%;
+    }
+
+    .contact-section {
+        width: 90%;
+    }
+}
